@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".RegisterFr">
+
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name" />
+    <EditText
+        android:id="@+id/surname"
+        android:layout_below="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/surname" />
+    <EditText
+        android:id="@+id/mail"
+        android:layout_below="@+id/surname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/mail" />
+    <EditText
+        android:id="@+id/login"
+        android:layout_below="@+id/mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/login" />
+    <EditText
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password" />
+    <EditText
+        android:id="@+id/repassword"
+        android:inputType="textPassword"
+        android:layout_below="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/repassword" />
+    <Button
+        android:backgroundTintMode="screen"
+        android:text="@string/resistration"
+        android:id="@+id/btn_reg_fr_registr"
+        android:layout_below="@+id/repassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
