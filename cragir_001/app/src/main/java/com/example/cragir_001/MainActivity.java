@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.viewpager);
         VpAdapter vpadapter = new VpAdapter(this, getData);
         viewPager.setAdapter(vpadapter);
+        
     }
 
     private List<Auto> dataSource() {

@@ -1,31 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MassangerActivity">
-    <TextView
-        android:id="@+id/mass_txt"
-        android:text="a"
-        android:textStyle="bold"
-        android:layout_width="match_parent"
-        android:layout_height="500dp" />
-    <LinearLayout
+    tools:context=".massange.MassangerActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/res_view_mass1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_alignParentTop="true"
+        android:textStyle="bold" />
+
+
         <EditText
             android:id="@+id/mass_ed"
-            android:layout_width="300dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/bnt_send"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <ImageButton
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
             android:id="@+id/bnt_send"
             android:src="@drawable/ic_arrow_forward_black_24dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-    </LinearLayout>
 
 
-</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <android.support.design.widget.TabLayout
+        app:tabIconTint="@color/cardview_light_background"
+        app:tabInlineLabel="true"
+        app:tabIconTintMode="src_atop"
+        app:tabIndicatorHeight="10dp"
+        app:tabBackground="@color/table"
+        android:id="@+id/TabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:background="#1E43C4"
+        android:id="@+id/vP"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:text="Hello World!"
+        tools:ignore="MissingConstraints">
+
+        <!--<android.support.v4.view.PagerTitleStrip-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+             <!--/>-->
+
+
+    </android.support.v4.view.ViewPager>
+
+    <android.support.v7.widget.RecyclerView
+        android:background="@drawable/ic_launcher_foreground"
+        android:id="@+id/recycler_pow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</LinearLayout>

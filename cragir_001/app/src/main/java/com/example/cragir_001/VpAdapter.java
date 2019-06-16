@@ -10,6 +10,10 @@ import android.view.ViewGroup;;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.cragir_001.pakage1.Main2Activity;
+import com.example.cragir_001.pakage2.Main3Activity;
+
 import java.util.List;
 public class VpAdapter extends PagerAdapter {
     private Context context;
@@ -35,21 +39,40 @@ public class VpAdapter extends PagerAdapter {
         final View view = this.layoutInflater.inflate(R.layout.auto_list, container, false);
         ImageView displayImage = view.findViewById(R.id.large_image);
         TextView imageText = view.findViewById(R.id.image_name);
-
-
         displayImage.setImageResource(this.autoList.get(position).getImageId());
         imageText.setText(this.autoList.get(position).getImageName());
         container.addView(view);
-        button = container.findViewById(R.id.btn);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(context, Main2Activity.class);
-                Log.i("===p", "onClick: ");
+        button = view.findViewById(R.id.btn);
+       switch (position){
+           case 0:  button.setOnClickListener(new View.OnClickListener() {
+               @Override
+               public void onClick(View v) {
+                   Intent intent = new Intent(context, Main2Activity.class);
+                   Log.i("===p", "onClick: ");
 
-                context.startActivity(intent);
-            }
-        });
+                   context.startActivity(intent);
+               }
+           });break;
+           case 1:  button.setOnClickListener(new View.OnClickListener() {
+               @Override
+               public void onClick(View v) {
+                   Intent intent = new Intent(context, Main3Activity.class);
+                   Log.i("===p", "onClick: ");
+
+                   context.startActivity(intent);
+               }
+           });break;
+
+       }
+//        button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(context, Main2Activity.class);
+//                Log.i("===p", "onClick: ");
+//
+//                context.startActivity(intent);
+//            }
+//        });
         return view;
     }
 

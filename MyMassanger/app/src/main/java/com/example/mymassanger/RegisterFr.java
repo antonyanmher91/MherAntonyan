@@ -4,6 +4,8 @@ package com.example.mymassanger;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,19 +14,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.mymassanger.users.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
-
-import java.util.ArrayList;
-import java.util.HashMap;
 
 
 /**
@@ -35,7 +32,7 @@ public class RegisterFr extends Fragment {
     EditText name, surName, mail, login, password, repassword;
     Button btn_registracia;
     private FirebaseAuth mAuth;
-    Integer x;
+    FirebaseUser user;
 
     public RegisterFr() {
         // Required empty public constructor
@@ -85,40 +82,10 @@ public class RegisterFr extends Fragment {
                     repasswordbool = false;
                 }
                 if ((namebol && surNamebool && mailbool && loginbool && passbool && repasswordbool)) {
+
+
                     registracia(mail.getText().toString(), password.getText().toString());
 
-//                    FirebaseDatabase database1 = FirebaseDatabase.getInstance();
-//                    DatabaseReference myRef1 = database1.getReference("count");
-//
-//
-//
-//                    myRef1.addValueEventListener(new ValueEventListener() {
-//                        @Override
-//                        public void onDataChange(DataSnapshot dataSnapshot1) {
-//
-//
-//                           Integer sr =  dataSnapshot1.getValue(Integer.class);
-//                            x=sr;
-//                        }
-//
-//                        @Override
-//                        public void onCancelled(DatabaseError error) {
-//                            // Failed to read value
-//                            System.out.println("Failed to read value." + error.toException());
-//                        }
-//                    });
-//                    int y =x+1;
-//                    myRef1.setValue(y);
-
-
-                    FirebaseDatabase database = FirebaseDatabase.getInstance();
-                    DatabaseReference myRef = database.getReference("users");
-//                    ArrayList<User>list = new ArrayList<>();
-//                    list.add(new User(name.getText().toString(),surName.getText().toString(),login.getText().toString()));
-                    User user = new User(name.getText().toString(),surName.getText().toString(),login.getText().toString());
-
-
-                     myRef.child(name.getText().toString()).setValue(user);
 
                 }
 
@@ -192,6 +159,17 @@ public class RegisterFr extends Fragment {
                             // Sign in success, update UI with the signed-in user's information
 
                             FirebaseUser user = mAuth.getCurrentUser();
+                            FirebaseDatabase database = FirebaseDatabase.getInstance();
+                            DatabaseReference myRef = database.getReference("users");
+                            User user1 = new User(name.getText().toString(), surName.getText().toString(), user.getUid());
+                            myRef.child(user.getUid()).setValue(user1);
+
+                            FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                            LoginFr loginFr = new LoginFr();
+                            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                            fragmentTransaction.add(R.id.LLmain, loginFr);
+                            fragmentTransaction.commit();
+
 
                         } else {
                             // If sign in fails, display a message to the user.
@@ -206,28 +184,7 @@ public class RegisterFr extends Fragment {
                 });
 
     }
-    public  void count(){
-        FirebaseDatabase database1 = FirebaseDatabase.getInstance();
-        DatabaseReference myRef1 = database1.getReference("count");
 
-        myRef1.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                // This method is called once with the initial value and again
-                // whenever data at this location is updated.
-                String value = dataSnapshot.getValue(String.class);
-
-            }
-
-            @Override
-            public void onCancelled(DatabaseError error) {
-                // Failed to read value
-
-            }
-        });
-
-
-    }
 
     @Override
     public void onStart() {

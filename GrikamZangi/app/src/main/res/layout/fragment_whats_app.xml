@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.WhatsApp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:id="@+id/edwatsapp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        />
+    <Button
+        android:onClick="whatsApp"
+        android:id="@+id/btnwhat"
+        android:text="sendWhatsAppsms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="OnClick" />
+
+</LinearLayout>
