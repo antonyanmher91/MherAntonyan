@@ -16,6 +16,8 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.example.mychat.Notifications.MyFirebaseIdService;
+import com.example.mychat.Notifications.MyFirebaseMessaging;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -50,6 +52,10 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("");
+        Intent intent = new Intent(getApplicationContext(), MyFirebaseMessaging.class);
+        startService(intent);
+        Intent i = new Intent(getApplicationContext(), MyFirebaseIdService.class);
+        startService(i);
 
         profile_image = findViewById(R.id.profile_image);
         username = findViewById(R.id.username);

@@ -19,6 +19,8 @@ import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 import com.example.mychat.MessageActivity;
 
+import java.util.Map;
+
 public class MyFirebaseMessaging extends FirebaseMessagingService {
 
     @Override
@@ -27,10 +29,8 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
 
         String sented = remoteMessage.getData().get("sented");
         String user = remoteMessage.getData().get("user");
-
         SharedPreferences preferences = getSharedPreferences("PREFS", MODE_PRIVATE);
         String currentUser = preferences.getString("currentuser", "none");
-
         FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         if (firebaseUser != null && sented.equals(firebaseUser.getUid())){
             if (!currentUser.equals(user)) {
@@ -91,7 +91,7 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
         PendingIntent pendingIntent = PendingIntent.getActivity(this, j, intent, PendingIntent.FLAG_ONE_SHOT);
 
         Uri defaultSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(this,OreoNotification.CHANNEL_ID)
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this)
                 .setSmallIcon(Integer.parseInt(icon))
                 .setContentTitle(title)
                 .setContentText(body)
