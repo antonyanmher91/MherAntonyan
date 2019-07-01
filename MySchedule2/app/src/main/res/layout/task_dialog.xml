@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/task_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_directions_bike_black_24dp" />
+
+    <EditText
+        android:id="@+id/task_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/task_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/task_name" />
+
+    <Spinner
+        android:id="@+id/tasc_proit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/task_desc">
+
+    </Spinner>
+    <TextView
+        android:id="@+id/tasc_txt_peior"
+        android:layout_toRightOf="@+id/tasc_proit"
+        android:layout_below="@id/task_desc"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+    <DatePicker
+        android:id="@+id/task_data"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tasc_proit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="-30dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner" />
+
+    <TimePicker
+        android:id="@+id/task_time"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@+id/task_data"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="-30dp"
+        android:layout_marginRight="-30dp"
+        android:timePickerMode="spinner" />
+
+    <Button
+        android:id="@+id/btn_task_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/task_time"
+        android:layout_alignParentEnd="true"
+        android:backgroundTintMode="screen"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/btn_task_cansle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/task_time"
+        android:layout_toLeftOf="@+id/btn_task_save"
+        android:backgroundTintMode="screen"
+        android:text="Cansle" />
+
+
+</RelativeLayout>

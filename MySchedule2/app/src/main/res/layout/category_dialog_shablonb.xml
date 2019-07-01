@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imgcategory"
+        android:src="@mipmap/icon"
+        android:layout_width="wrap_content"
+        android:background="@drawable/circle_imageview"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_below="@+id/imgcategory"
+        android:id="@+id/edtxt_cadegory_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_save_category"
+        android:layout_alignParentRight="true"
+        android:backgroundTintMode="screen"
+        android:layout_below="@+id/edtxt_cadegory_dialog"
+        android:text="save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_toLeftOf="@+id/btn_save_category"
+        android:layout_below="@+id/edtxt_cadegory_dialog"
+        android:backgroundTintMode="screen"
+        android:text="cansle"
+        android:id="@+id/btn_censl_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:src="@drawable/colorimg"
+        android:id="@+id/color_img"
+        android:layout_below="@+id/btn_save_category"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+    <View
+        android:id="@+id/colorView"
+        android:layout_below="@+id/color_img"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"></View>
+
+
+</RelativeLayout>
