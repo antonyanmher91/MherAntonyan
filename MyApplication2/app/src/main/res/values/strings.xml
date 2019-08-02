@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Daily Posts</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Users</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_user_profile">UserProfileActivity</string>
+    <string name="title_activity_user_page">UserPageActivity</string>
+    <string name="username">UserName</string>
+    <string name="company">Company:</string>
+    <string name="phone">Phone:</string>
+    <string name="email">Email:</string>
+    <string name="web">Web:</string>
+    <string name="addres">Addres:</string>
+    <string name="post_title">Post title</string>
+    <string name="post_body">Post body</string>
+
+    <string name="_8942">⋮</string>
+    <string name="todo">todo</string>
+</resources>
