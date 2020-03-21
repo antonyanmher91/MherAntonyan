@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 7" width="11" height="7">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #000000 } 
+	</style>
+	<g id="navigation">
+		<path id="down arrow" class="shp0" d="M2 2.33L3.27 1L5.5 3.33L5.51 3.33L5.51 3.33L7.73 1.01L9 2.34L5.5 5.99L2 2.33Z" />
+	</g>
+</svg>

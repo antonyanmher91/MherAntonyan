@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 26" width="28" height="26">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff } 
+	</style>
+	<g id="middle section">
+		<g id="text box 4">
+			<path id="plane 2" class="shp0" d="M27 14.01L18.15 16.78L7.24 7.22L15.69 17.51L6.23 20.53L1.35 1.18L27 14.01ZM15.99 19.03L15.99 24.36L12.88 19.96L15.99 19.03Z" />
+		</g>
+	</g>
+</svg>

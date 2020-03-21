@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 11" width="7" height="11">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #000000 } 
+	</style>
+	<g id="middle section">
+		<g id="text box 1">
+			<path id="arrow" class="shp0" d="M2.33 9L1 7.73L3.33 5.49L3.33 5.49L3.33 5.49L1.01 3.27L2.34 2L5.99 5.49L2.33 9Z" />
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,530 @@
+header,
+nav,
+.contenier-footer,
+.main-contenier {
+    width: 1250px;
+    margin: 0px auto;
+}
+
+footer {
+    background-color: #FCFAF4;
+}
+
+body {
+    margin: 0px;
+}
+
+.border {
+    width: 100%;
+    border-top: 2px solid #F4F4F4;
+}
+
+header {
+    display: flex;
+    background-color: white;
+}
+
+.header-nav {
+    width: 45%;
+}
+
+.header-nav a {
+    color: #AAB818;
+    list-style-type: none;
+}
+
+
+/* logo */
+
+.logo {
+    width: 10%;
+    margin: 0 20px;
+}
+
+.logo-food {
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 7px;
+}
+
+
+/* heer nav rigth */
+
+.links-rigth ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links-rigth li {
+    margin-left: 15px;
+    list-style-type: none;
+}
+
+
+/* top bar */
+
+.top-bar {
+    border-bottom: 1px dashed #545A5F;
+    padding: 5px 0px;
+}
+
+.top-bar-rigth {
+    text-align: right;
+}
+
+.top-bar span {
+    margin-top: 5px;
+    margin-left: 8px;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #545A5F;
+}
+
+form {
+    position: relative;
+}
+
+
+/* header nav left */
+
+.btn-search {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.input-search {
+    width: 287px;
+    height: 36px;
+    border-radius: 20px;
+    border: 1px solid rgb(193, 219, 214);
+    padding-left: 2px;
+}
+
+.phone-number {
+    color: #AAB818;
+}
+
+.links-left {
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+    height: 70px;
+}
+
+.links-left a {
+    margin-right: 25px;
+    font: Regular Arial 15px/18px Lato;
+}
+
+
+/* nav bar*/
+
+.nav-bar ul {
+    padding-left: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar ul li {
+    list-style-type: none;
+}
+
+header a,
+.nav-bar a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-bar a {
+    color: #545A5F;
+}
+
+.nav-bar img {
+    padding: 3px;
+}
+
+
+/* main */
+
+.main {
+    background-color: #F4F4F4;
+    padding-top: 5px;
+}
+
+.produck {
+    background-color: white;
+}
+
+.img-main {
+    width: 1250px;
+}
+
+
+/*title product*/
+
+.produck-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 37px 0px;
+}
+
+.border-title {
+    border: 1px dotted #545A5F;
+}
+
+.border-n {
+    width: 40%;
+}
+
+.title {
+    font-size: 25px;
+}
+
+.title-top {
+    color: #545A5F;
+}
+
+.title-bottom {
+    display: block;
+    color: #AAB818;
+}
+
+.logo-e {
+    position: absolute;
+    right: 1px;
+}
+
+
+/* product jimbean*/
+
+.product-jimbean {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-color: white;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.spren {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+
+/* logo jimbean*/
+
+.jimbeamlogo {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+
+.product-name {
+    text-transform: uppercase;
+    color: #545A5F;
+    font-size: 18px;
+}
+
+
+/*decription jimbean*/
+
+.desc-jimbean {
+    padding-left: 39px;
+    max-width: 700px;
+    width: 100%;
+    background-color: #F4F4F4;
+}
+
+.jimbean-rabatt {
+    font-size: 30px;
+    color: #AAB818;
+}
+
+.jimbean-inkl {
+    font-size: 15px;
+}
+
+.jimbean-pirce {
+    color: #A50852;
+    font-size: 15px;
+    text-decoration: line-through;
+}
+
+.jimbean-inhal,
+.jimbean-chek {
+    color: #545A5F;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.jimbean-onchek {
+    color: #AAB818;
+}
+.jimbean-chek{
+    font-size: 14px;
+}
+
+
+/* btn jimbean*/
+
+.jimbean-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.btn-jimbean {
+    background-color: #AAB918;
+    border: 1px solid #AAB918;
+    color: white;
+    width: 164px;
+    height: 34px;
+    border-radius: 24px;
+    padding-left: 40px;
+}
+
+.icon-buy {
+    position: absolute;
+    left: 30px;
+    top: 10px;
+}
+
+.btn-love {
+    width: 38px;
+    margin-left: 10px;
+}
+.img-1{
+    padding-top: 25px;
+}
+
+
+
+/* products Angebote der Woche */
+.border-angebote{
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* footer */
+
+.contenier-footer a {
+    text-decoration: none;
+    color: #545A5F;
+}
+
+.contener1 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 94px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.kontakts {
+    margin-left: 50px;
+}
+
+.ser-rech {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-rechtliches,
+.kontakt,
+.food,
+.kundenmeinung,
+.zahlungsarten,
+.newsletter-anmeldung,
+.top-marken,
+.sicher-kaufen {
+    border-left: 1px dashed #545A5F;
+    padding-left: 5px;
+}
+
+.service-rechtliches,
+.food {
+    width: 30%;
+    align-items: baseline;
+}
+
+.service {
+    margin-left: 50px;
+}
+
+.rechtliches {
+    margin-left: 24px;
+}
+
+.food img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.avatar {
+    background-color: #545A5F;
+    padding: 5px;
+    width: 30px;
+    text-align: center;
+}
+
+.foods {
+    margin-left: 50px;
+}
+
+.kontakts a {
+    font-size: 15px;
+    color: #AAB818;
+}
+
+.contener1 p {
+    text-transform: uppercase;
+    color: #545A5F;
+    font-size: 20px;
+}
+
+.contener1 a {
+    font-size: 18px;
+}
+
+.kontakts a {
+    font-size: 15px;
+}
+
+.contener1 span {
+    font-size: 18px;
+    color: #545A5F;
+}
+
+.contener2 {
+    display: flex;
+    text-transform: uppercase;
+    color: #545A5F;
+}
+
+.versandart {
+    width: 20%;
+}
+
+.zahlungsarten,
+.kundenmeinung {
+    width: 40%;
+    padding-left: 25px;
+}
+
+.kundenmeinung {
+    position: relative;
+}
+
+.produkt-lesen {
+    position: absolute;
+    right: 4px;
+    font-size: 12px;
+}
+
+.stars {
+    display: flex;
+    flex-direction: column;
+}
+
+.stars img {
+    width: 100px;
+}
+
+.stars p {
+    margin: 0;
+    margin-left: 8px;
+}
+
+.border-footer {
+    width: 100%;
+    border-top: 1px dashed #545A5F;
+    margin: 10px 0px;
+}
+
+.contener3 {
+    display: flex;
+}
+
+.newsletter-anmeldung {
+    width: 25%;
+}
+
+.top-marken {
+    width: 25%;
+}
+
+.sicher-kaufen {
+    width: 25%;
+    padding-left: 50px;
+}
+
+.kategorien {
+    width: 13%;
+}
+
+.foto {
+    display: flex;
+}
+
+.foto-mar {
+    margin-top: 15px;
+}
+
+.contener3 p,
+.contener3 span {
+    text-decoration: none;
+    color: #545A5F;
+}
+
+.contener3 p {
+    text-transform: uppercase;
+}
+
+.contener3 a {
+    font-size: 18px;
+}
+
+.sengmassage {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.sengmassage div {
+    background-color: white;
+}
+
+.sengmassage img {
+    margin-left: 60px;
+}
+
+.text-sengmassage {
+    font-size: 12px;
+    color: #989898;
+    margin-left: 19px;
+}
+
+.top-markens {
+    margin-left: 72px;
+}
+
+.newsletter {
+    margin-left: 42px;
+}
